@@ -1,0 +1,61 @@
+\documentclass[12pt,oneside]{udthesis}
+
+%----------------------------------------------------------------------------------------
+%	Atributes Settings
+%----------------------------------------------------------------------------------------
+% About your study degree programme
+\def \study{ITM} % possible options: ITM, SWD, MSD, IRM, IMS
+
+% More about you and your thesis:
+\def \Title{TESIS}
+\def \title{PRA TESIS}
+\def \subtitle{Preferensi Pengunjung Waterfront di Kota Parepare Sebagai Kota Wisata}
+\def \yourName{Muhammad Uliah Shafar}
+\def \yourIdentifier{21020119420029}
+\def \yourPlace{<place>}
+\def \submissionDate{<date>}  % month year. e.g. June 2017
+\DTMsavedate{tanggalberita}{2021-01-31} %tanggal sidang
+\def \hariBerita{<day>} %hari sidang
+\def \yourAdvisor{Dr. Ars. Ir. Wijayanti, M.Eng}
+\DTMsavetime{waktuberita}{24:60:60} %waktu sidang
+\def \yourNipAdvisor{196307111990012001}
+\def \yourSecAdvisor{Prof. Dr. Ir. Atik Suprapti,  M.T.}
+\def \yourNipSecAdvisor{196511131998032001}
+%\def \thisDocumentIsA{Thesis} % possible options:
+                     % Thesis  .... for Master's Thesis   / Masterarbeit
+                     % Thesis  .... for Bachelor's Thesis / Bachelorarbeit
+                     % Seminar .... for Seminar Work      / Seminararbeit
+                     % Project .... for Project Work      / Projektarbeit
+
+% ITM/SWD/IRM: you could possibly write in German.
+%\def \yourLanguage{english} % possible options: german, english
+
+
+
+
+\begin{document}
+
+\Sexpr{knit_child("frontmatter.Rnw")}
+
+%----------------------------------------------------------------------------------------
+% TOC
+%\tableofcontents
+%\clearpage
+%\addcontentsline{toc}{chapter}{\listfigurename}
+%\listoffigures
+%\clearpage
+%\addcontentsline{toc}{chapter}{\listtablename}
+%\listoftables
+
+\clearpage
+\pagenumbering{arabic}
+\Sexpr{knit_child("principaltext.Rnw")}
+\Sexpr{knit_child("backmatter.Rnw")}
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+\bibliographystyle{apalike}
+\bibliography{bibliography/biblio.bib}
+
+
+\end{document}

@@ -1,0 +1,238 @@
+% Child with Latex code only:
+
+
+%--------------------------------------------------------------------------------------
+% R chunk
+%--------------------------------------------------------------------------------------
+% Set parent
+<<<parent2, echo=F , cache=F>>=
+rm(list=ls())
+library("knitr")
+set_parent("thesis.Rnw")
+@
+
+% load stat
+<<content1, child="stats.Rnw", cache=T>>=
+@
+%--------------------------------------------------------------------------------------
+
+
+\chapter{Pendahuluan}\label{chap:pendahuluan}
+
+\section{Latar Belakang}
+%developmnet waterfrontis crucial
+Tepi laut menjadi sebuah ruang dari perkotaan yang harus terus berkembang \cite{shamsuddin2013}. Kawasan ini memiliki karakteristik dan perhatian khusus mengingat pentingnya air sebagai sumber kehidupan. Untuk mencapai tujuan tersebut, pengembangan tepi laut adalah sangat penting. Menurut \cite{hussein2014}, pengembangan tepi laut yang baik adalah yang mempertimbangkan keberagaman, interaksi komunitas, kenyamanan dan keamanan, lingkungan dan keberlanjutan. Pengembangan berkelanjutan\textit{(sustainable development)} kota pada waterfront mendorong kondisi yang lebih baik untuk masyarakat perkotaan \citep{brebbia2016sustainable}.
+Berdasarkan \cite{imperatives1987}, \textit{Sustainability development} adalah pengembangan yang memenuhi kebutuhan saat ini tanpa mempertaruhkan kemampuan dari generasi akan datang untuk memenuhi kebutuhannya.
+
+%pengembngn berdsrkn keberlanjutan adlh kbutuhn
+Sebagai negara dengan garis pantai terpanjang di dunia \citep{hindersah2015}, Indonesia memiliki jam terbang yang panjang dalam menghadapi masalah yang rumit dari tepi laut. Pembahasan tentang pengembangan berkelanjutan tepi laut telah ramai diperbincangkan di Indonesia seperti contohnya proyek reklamasi di Makassar dan Manado \citep{andi2017,tungka2012, fhuh2017}, pengembangan ulang tepi laut tahun 1995 sepanjang 32 km di Jakarta \citep{pramesti2017} dan Desain lanskap tepi laut di Sungai Cikapundung \citep{ainy2016}. Menurut \cite{breen1994}, tekanan pada ruang kota dan infrastruktur, kebutuhan atas kualitas lingkungan, dan ketersediaan ruang tepi laut yang terbengkalai menjadi alasan pengembangan ulang kawasan tepi laut sebagai solusi yang pas. Pengembangan ulang tersebut telah di atur sedemikian rupa agar menjadi bagian dari langkah perkotaan yang keberlanjutan \citep{pramesti2017}.
+
+%kondisi parepare
+Kota Parepare merupakan kota yang terletak di Provinsi Sulawesi Selatan. Peningkatan jumlah penduduk di Parepare berkisar 2\%, pada tahun 2019 Parepare memiliki penduduk sebanyak 145.178 orang \citep{bpskotaparepare2020}. Dengan mayoritas usia penduduk  merupakan mereka yang berusia awal(0-40). Peningkatan jumlah penduduk tersebut mungkin saja disebabkan oleh potensi Parepare yang menjanjikan untuk kehidupan masyarakat.
+Parepare memiliki garis pantai sepanjang 11.8km, lebih kecil dari panjang garis pantai daerah-daerah sekitar seperti Kabupaten Jeneponto (114km) \citep{wardasusaniati2011}, Kabupaten Pangkep(58.87) dan Kabupaten Pinrang(98.51km) \citep{goni2018}. Meskipun demikian, Kota Parepare adalah kota adminsitratif dari 3 kota di Sulawesi Selatan \citep{junaid2016} sebagai faktor pendorong kemajuan kota ini.
+Terdapat sejumlah area yang berada di garis pantai tersebut misalnya Tepi Sungai Tonrangeng, Taman Mattirotasi, Pantai Bibir dan Tepi Laut Senggol.
+Dengan sejumlah tempat rekreasi tersebut, Parepare mencanangkan konsep kota wisata dengan ikon Patung Bapak BJ Habibie, Presiden Ketiga Republik Indonesia.
+
+%karakteristik di tepi laut senggol
+Saat ini, Kota Parepare sedang melakukan sejumlah kemajuan di bidang pariwisata. Salah satunya adalah revitalisasi tepi laut senggol.
+Pengembangan tepi laut ini bertujuan agar mampu mendorong jumlah pengunjung pada tempat wisata tersebut, sebagaimana \cite{hoyle2001} menjelaskan keberhasilan suatu tepi laut ditandai dengan pengembangannya membawa masyarakat dan pengunjung untuk datang ke pesisir.
+Tepi laut senggol telah lama menjadi daya tarik populer bagi masyarakat setempat. Tepi laut senggol memiliki pemandangan yang sangat indah. Pemandangan sebuah teluk menjadi ciri khas daerah ini. Selain itu, pengunjung juga tertarik untuk berwisata kuliner yang ditemani dengan kombinasi pemandangan elemen daratan dan air. Penyedia utama yang mendukung daya tarik tersebut adalah pedagang kaki lima yang bertahan dari dulu hingga saat ini. Setelah berwisata kuliner, banyak yang menghabiskan sisa waktunya untuk berenang di tepi laut. Menurut \cite{davidowich1998}, bagian yang terpenting dalam pengembangan tepi laut adalah kemampuan pengunjung untuk berinteraksi dengan air. Selain berenang, aktivitas rekreasi seperti memancing dan mencari kepiting membutuhkan akses ke air \citep{gordon1996}. Penggunaan beragam dapat berkontribusi terhadap kesuksessan strategi berkelanjutan \citep{eldeeb2015}.
+
+% def Preferensi ruang
+Kawasan tepi laut senggol terbentang dari Pelabuhan Nusantara hingga Pasar Senggol sepanjang sekitar 300 meter. Sepanjang garis pantai tersebut terbentuk sejumlah ruang dengan karakteristik yang berbeda. Pengembangan yang terjadi di kawasan tersebut untuk merespon konsep kota Parepare sebagai kota Pariwisata.
+Ruang menjadi tempat yang dapat mengakomodasi masyarakat untuk meningkatkan kualitas hidup mereka \citep{kim2012}. Beberapa ruang yang tercipta melahirkan preferensi ruang masyarakat. Menurut \cite{devysandra2012}, preferensi adalah kecenderungan untuk memilih sesuatu yang lebih disukai daripada yang lain. Sejumlah atribut pada ruang tersebut menjadi alasan dalam pemilihan ruang di kawasan tepi laut.
+Mengetahui preferensi ruang dari masyarakat dapat membantu menyediakan dan mengelola pengembangan untuk memenuhi kebutuhan masyarakat secara efektif \citep{madureira2018}.
+%atribut preferensi ruang
+Beberapa penelitian menemukan sejumlah atribut yang mempengaruhi preferensi ruang masyarakat. Pada studi terhadap preferensi fitur lanskap manula, fasilitas dan infrastruktur yang alami, estetik, beragam, aksesibel, komprehensif, terpelihara serta adanya interaksi diantara manusia dan alam mempengaruhi tingkat preferensi mereka \citep{wen2018}. Karakteristik fisik suatu ruang hijau seperti taman dan desain jalan setapak mempengaruhi preferensi umum \textit{general preference}, meskipun preferensi ruang untuk menghilangkan stres hampir sama dengan preferensi umum, ini lebih mengutamakan pada jumlah pengunjung yang sedikit \citep{arnberger2015}. Studi lain menjabarkan sejumlah atribut penting dalam sebuah kawasan hijau yakni: kebersihan dan pemeliharaan, peningkatan jumlah kekayaan vegetasi, keberadaan badan air berperan dalam membentuk preferensi atribut RTH \citep{madureira2018}.
+
+% existing research
+Penelitian terkait preferensi telah banyak dibahas seperti preferensi terhadap penataan permukiman nelayan kumuh \citep{ramdani2013}, preferensi pengguna terhadap kualitas taman kota sebagai ruang publik \citep{pratomo2017} dan  preferensi masyarakat terhadap taman kota di pusat kota tangerang \citep{imansari2015}.
+%state of the art
+Namun terlepas dari studi berkaitan dengan preferensi, hanya sedikit yang membahas tentang preferesi diantara ruang secara menyeluruh di kawasan tepi laut.
+Kebanyakan penelitian hanya mendiskusikan karakteristik atau atribut yang paling dicenderungi masyarakat. Hipotesis peneliti bahwa pemilihan ruang didasarkan atas alasan apakah seseorang menyukai ruang dengan sekelompok atribut satu daripada ruang dengan sekelompok atribut lainnya.
+Ditambah lagi, penilaian lokal harus diadakan karena preferensi ruang tepi laut dapat berbeda dari setiap kota \citep{madureira2018}.
+Dengan beragam ciri khusus masyarakat dan latar belakang yang berbeda, tepi laut senggol diharapkan dapat dikaji agar memenuhi kebutuhan masyarakat lokal dan pengunjung yang transit dari berbagai daerah di Sulawesi Selatan.
+Selain memperhatikan preferensi ruang masyarakat, isu-isu berkaitan dengan keberlanjutan akan di selediki dalam mendukung tepi laut sukses berkelanjutan.
+
+
+\section{Rumusan Masalah}
+Kawasan tepi laut merupakan kawasan yang sangat rentan dan bernilai tinggi \citep{mullin2000}. Sebagai area yang merupakan bagian yang tidak terpisahkan dari sebuah kota \citep{hussein2014}. Pengembangan tepi laut yang berhasil menarik masyarakat untuk datang ke pesisir. Keberhasilan suatu tepi laut menjadi tanda sebuah kota yang berhasil.
+Pengembangan ulang dapat mendongkrak atau menurunkan kualitas suatu tepi laut. Abad 21 ini, Parepare menitikberatkan pembangunan kota dalam aspek kepariwisataan \citep{junaid2016,faniapriani2018,muh.sainals2020} . Lokasi kota Parepare sangat strategis dimana meng­ hubungkan sejumlah kota wisata lainnya di Sulawesi Selatan \citep{junaid2016}, seperti Toraja, Bulukumba, Makassar, dan Palopo. Demikian menjadi pendukung kota Parepare sebagai kota Pariwisata. Potensi ini menjadi alasan perhatian penuh terhadap kawasan tepi laut di pesisir kota Parepare.
+Pada tahun 2011, kota Parepare memulai perencanaan penataan kawasan tepi laut senggol. Penataan ini menghasilkan sejumlah ruang yang memiliki atribut yang berbeda. Saat ini, masyarakat terpecah dalam menggunakan ruang di kawasan waterfront. Ada masyarakat yang cenderung terhadap ruang satu daripada lainnya. Alasan pemilihan ini belum jelas, seperti \cite{campagnaro2020} menemukan elemen buatan seperti jalan setapak, kursi, kran air minum berperan penting dalam pemilihan ruang hijau. Teori tersebut perlu dikaji pada kawasan ini, dimana elemen buatan tampaknya tidak berpengaruh signifikan terhadap pemilihan ruang di kawasan tepi laut.
+
+Berdasarkan permasalahan itu, penelitian ini menyelidiki preferensi ruang masyarakat di kawasan tepi laut senggol. Maka penelitian ini menjawab sejumlah pertanyaan penelitian sebagai berikut:
+
+\begin{enumerate}
+\item Apa preferensi ruang masyarakat di kawasan tepi laut Senggol? Mengapa masyarakat memilih satu daripada lainnya?
+    \item Apakah elemen buatan dan beragam penggunaan adalah faktor penting untuk preferensi ruang masyarakat? Apakah kepentingannya bervariasi diantara ruang-ruang?
+\end{enumerate}
+
+
+\section{Tujuan Penelitian}
+Penelitian ini bertujuan untuk menelusuri preferensi ruang  masyarakat di kawasan tepi laut. Preferensi ruang masyarakat juga akan dijelaskan dalam konteks atribut-atribut yang ada pada setiap ruang. Sehingga penelitian ini dapat menjelaskan mengapa preferensi ini terbentuk di kalangan masyarakat dan pengunjung.
+Peneliti berharap hasil penelitian ini dapat digunakan dalam melengkapi kekurangan dan mempertahankan atribut pada suatu ruang. Dengan begitu, pengembangan selanjutnya menghasilkan integrasi antara ruang dan mensukseskan kawasan tepi laut senggol secara keseluruhan tanpa melupakan sisi keberlanjutan sebuah tepi laut.
+
+\section{Manfaat Penelitian}
+
+Penelitian ini dapat bermanfaat dalam bidang ilmu pengetahuan perencanaan perkotaan khusunya di kawasan tepi laut. Mengetahui preferensi ruang masyarakat menjadi alat untuk mengikutsertakan masyarakat dalam pengembangan berkelanjutan. Dalam masa pembangunan infrastruktur Indonesia sangat dibutuhkan pengetahuan yang mendukung kesuksessan tepi laut berkelanjutan. Penelitian ini secara detail bermanfaat dalam:
+
+\begin{enumerate}
+\item Memberikan masukan desain secara keseluruhan berdasarkan preferensi ruang masyarakat.
+\item Mendukung penelitian selanjutanya dalam ranah preferensi ruang tepi laut.
+\item Memberikan panduan terhadap pengembangan tepi laut dimanapun dalam melibatkan masyarakat menggunakan informasi preferensinya.
+\end{enumerate}
+
+
+\begin{comment}
+\section{Sistematika Penulisan}
+Berikut ini adalah sistematika penulisan yang digunakan pada penelitian dimensi kenyamanan pada Waterfront Development:
+\begin{itemize}
+	\item Bab 1 : Pendahuluan\\
+Bab terdiri dari latar belakang permasalahan, perumusan masalah, tujuan penelitian, manfaat penelitian, dan sistematika penulisan.
+	\item Bab 2 : Tinjauan Pustaka\\
+Bab ini terdiri dari landasan teori yang digunakan untuk memperkuat penemuan masalah, penelitian terdahulu dan kerangka pemikiran.
+	\item Bab 3 : Metodologi Penelitian\\
+Bab ini terdiri dari penjelasan variabel dan jenis paradigma yang digunakan untuk mencapai penemuan sesuai rumusan masalah, populasi, sampel, dan cara pengumpulan data.
+	\item Bab 4 : Hasil dan Pembahasan\\
+Bab ini terdiri dari pembahasan mengenai hasil - hasil penelitian yang berupa data-data yang didapatkan, dengan melakukan pengolahan terhadap indikator-indikator kenyamanan. Setelah pengelolahan bahan-bahan tersebut, analisis diperlukan untuk menemukan penemuan penelitian. Analisis diarahkan untuk menjawab rumusan masalah.
+	\item Bab V : Kesimpulan\\
+Bab terakhir terdiri dari kesimpulan yang didapatkan dari analisis terhadap permasalahan yang terdapat pada penelitian ini, sehingga penemuan bersama saran-saran dari penelusi dapat menghasilkan apa yang diinginkan.
+
+
+\end{itemize}
+\section{Alur Pikir}
+
+\begin{figure}[hp]
+\centering
+\begin{tikzpicture}[node distance=2cm]
+\node (ltr) [startstop] {Latar Belakang};
+
+\node (rum) [startstop, right of=ltr, xshift=2cm] {Perumusan Masalah};
+
+\node (tuj) [startstop, below of=rum, yshift=0.5cm] {Tujuan Penelitian};
+
+
+\node (pus) [startstop, below of=tuj, yshift=0.5cm] {Studi Pustaka};
+
+
+\node (kaj) [startstop, below of=pus, text width=3.5cm, xshift= -4cm, yshift=.5cm] {
+	\textbf{Kajian Teori}\\ - Fitur binaan\\ - Aktivitas Luar
+};
+
+
+\node (kaj2) [startstop, below of=pus, text width=3.5cm, xshift= 4cm, yshift=.5cm] {
+	\textbf{Gambaran Objek}\\ Fitur Binaan dan Aktivitas Luar Jl. Pinggir Laut
+};
+
+
+\node (hip) [startstop, below of=pus, yshift=-.5cm] {Hipotesa};
+
+
+\node (met) [startstop, below of=hip, yshift=-.75cm, text width=7cm] {
+	\textbf{Metode Peneltian}\\ Menggunakan Metode penelitian Kuantitatif Rasionalistik
+
+	\textbf{Variabel}\\
+	- Bebas : Fitur Binaan\\
+	- Terikat : Aktivitas Luar\\
+
+	\textbf{Sumber data}: Observasi dan Kuesioner
+};
+
+\node (ana) [startstop, below of=met, text width=8cm, yshift=-2cm] {
+		\textbf{Analisis Data Statistik}\\ Penelitian ini menggunakan metode statika berupa uji regresi guna mengetahui pengaruh variabel fitur binaan terhadap variabel aktivitas luar.
+};
+
+\node (tem) [startstop, below of=ana, yshift=-.25cm] {Temuan Penelitian};
+
+\node (kes) [startstop, below of=tem, yshift=.6cm] {Kesimpulan dan Rekomendasi};
+
+\draw [arrow] (ltr) -- (rum);
+\draw [arrow] (rum) -- (tuj);
+\draw [arrow] (tuj) -- (pus);
+
+\draw [arrow] (pus) -| (kaj);
+\draw [arrow] (pus) -| (kaj2);
+
+\draw [doublearrow] (kaj) -- (kaj2);
+
+\draw [arrow] (kaj) |- (met);
+\draw [dotted] (kaj) |- (hip);
+
+\draw [arrow] (kaj2) |- (met);
+\draw [dotted] (kaj2) |- (hip);
+
+\draw [arrow] (met) -- (ana);
+\draw [arrow] (ana) -- (tem);
+
+\draw [arrow] (tem) -- (kes);
+
+\end{tikzpicture}
+\caption{Alur Pikir}
+\end{figure}
+
+\newpage
+\end{comment}
+
+\chapter{Tinjauan Pustaka}\label{chap:pstk}
+
+\lipsum[2-4]
+
+\section{Kerangka Penelitian}
+
+
+Dari hasil tinjauan pustaka peneliti menyusun kerangka penelitian berdasarkan variabel-variable yang layak diteliti.
+
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[node distance=2cm]
+
+	\node (tit) [startstop, text width= 5cm] {Fitur Fisik Binaan pada Aktivitas Luar Jl. Pinggir Laut};
+
+	\node (va1) [startstop, below of=tit, text width=5cm, xshift=-3cm] {Variabel Bebas\\ Fitur Fisik Binaan};
+
+	\node (va2) [startstop, below of=tit, text width=5cm, xshift=3cm] {Variabel Tergantung\\ Aktivitas Luar};
+
+	\node (de1) [startstop, below of=va1, text width=5cm, yshift=-2cm] {
+		\textbf{Sub Variabel Bebas}\\
+		- Elemen Jalan \\
+		- Kualitas Jalan \\
+		- Elemen Tempat Duduk \\
+		- Kualitas Tempat Duduk \\
+		- Elemen Alami \\
+		- Kualitas Alami \\
+		- Fasilitas \& Aminities \\
+		- Estetika \\
+
+	};
+	\node (de2) [startstop, below of=va2, text width=5cm, yshift=-2cm] {
+			\textbf{Sub Variable Tergantung}\\
+		- Aktivitas relaxsasi\\
+		- Aktivitas fisik\\
+		- Travel aktif\\
+		- Interaction with wildlife and nature\\
+		- Interaksi sosial\\
+		- Partisipasi di aktivitas grup\\
+		};
+\draw [arrow] (tit) -| (va1);
+\draw [arrow] (va1) -- (de1);
+\draw [arrow] (tit) -| (va2);
+\draw [arrow] (va2) -- (de2);
+
+\end{tikzpicture}
+\caption{Alur Pikir}
+\end{figure}
+
+\chapter{Metodologi Penelitian}\label{chap:method}
+
+\section{Metode dan Jenis Penelitian}
+
+\lipsum[2-4]
+
+\section{ Knitr child Documents}
+You should note that using knitr package you can easily incorporate difference kinds of files into a project.
+
+\tabRegresi
+\pieChartFig
+
+\chapter{Kesimpulan}\label{chap:kesimp}

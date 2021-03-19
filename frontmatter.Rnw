@@ -1,0 +1,227 @@
+% Child with Latex code only:
+
+
+%--------------------------------------------------------------------------------------
+% R chunk
+%--------------------------------------------------------------------------------------
+<<<parent, echo=F , cache=F>>=
+rm(list=ls())
+library("knitr")
+set_parent("thesis.Rnw")
+@
+%--------------------------------------------------------------------------------------
+
+\begin{titlepage}
+	\begin{center}
+
+\mbox{}\vfill
+
+  {\bf \Title \par}
+
+    \vspace{2\baselineskip}
+		\includegraphics[width=0.20\textwidth]{figures/logo}
+
+    \vspace{2\baselineskip}
+
+		{\large\bf\MakeUppercase \subtitle}
+
+    \vspace{\baselineskip}
+    Disusun dalam rangka memenuhi persyaratan\\ Program Studi Magister Arsitektur\\
+    \vspace{\baselineskip}
+        {\bf
+           {\MakeUppercase\yourName}\\
+           \yourIdentifier
+        }
+
+    \vspace{3\baselineskip}
+		{\large\bf PROGRAM STUDI MAGISTER ARSITEKTUR DEPARTEMEN ARSITEKTUR FAKULTAS TEKNIK\\ UNIVERSITAS DIPONEGORO\\
+			SEMARANG\\
+			2021
+		}
+	\end{center}
+\vfill\mbox{}
+
+\end{titlepage}
+
+\begin{titlepage}
+	\begin{center}
+
+\mbox{}\vfill
+
+  {\bf \title \par}
+
+    \vspace{3\baselineskip}
+		\includegraphics[width=0.20\textwidth]{figures/logo}
+
+    \vspace{3\baselineskip}
+
+		{\large\bf\MakeUppercase \subtitle}
+
+    \vspace{3\baselineskip}
+    disusun oleh\\
+        {\bf
+           {\MakeUppercase\yourName}\\
+           \yourIdentifier
+        }
+
+    \vspace{3\baselineskip}
+		{\large\bf PROGRAM STUDI MAGISTER ARSITEKTUR DEPARTEMEN ARSITEKTUR FAKULTAS TEKNIK\\ UNIVERSITAS DIPONEGORO\\
+			SEMARANG\\
+			2021
+		}
+	\end{center}
+\vfill\mbox{}
+
+\end{titlepage}
+
+\pagenumbering{roman}
+\chapter*{HALAMAN PERNYATAAN ORIGINALITAS}
+\addcontentsline{toc}{chapter}{HALAMAN PERNYATAAN}
+\begin{center}
+ Dengan ini saya sebagai penulis menyatakan bahwa Pra Tesis dengan judul \subtitle\,adalah hasil karya saya sendiri. Semua data yang dicantumkan dan sumber referensi yang dikutip pada Pra Tesis ini adalah benar dan dapat dipertanggungjawabkan keasliannya.
+\end{center}
+
+\vspace{8\baselineskip}
+
+\begin{flushright}
+\begin{tabular}{@{}l}
+
+Semarang, \DTMtoday \\
+Penulis, \\
+\\
+\\
+\\
+\underline{Muhammad Uliah Shafar} \\
+NIM. 21020119420029
+
+\end{tabular}
+
+\end{flushright}
+\clearpage
+
+% Validation -------------------------------------------------------------------------
+\chapter*{\large\MakeUppercase\subtitle}
+\addcontentsline{toc}{chapter}{HALAMAN PENGESAHAN}
+\begin{center}
+   Oleh :\\
+   {\MakeUppercase \yourName}\\
+   \yourIdentifier
+
+\vspace{2\baselineskip}
+{\small Diajukan pada Sidang Pra Tesis\\ Pada tanggal \DTMtoday}
+
+
+\vspace{3\baselineskip}
+Semarang, \DTMtoday
+
+\vspace{2\baselineskip}
+
+\begin{tabular}{@{}ccc@{}}
+Pembimbing I	 & & Pembimbing II\\
+	 & & \\
+	 & & \\
+	 & & \\
+\yourAdvisor & & \yourSecAdvisor \\
+
+\yourNipAdvisor & & \yourNipSecAdvisor \\
+\end{tabular}
+
+\vspace{2\baselineskip}
+
+Mengetahui\\
+Ketua Program Studi \\
+Magister Arsitektur Departemen Arsitektur\\
+Fakultas Teknik Universitas Diponegoro\\
+
+\vspace{3\baselineskip}
+
+Dr.Ir.Suzanna Ratih Sari, M.M., M.A.\\NIP. 196704301992032002
+\end{center}
+
+% Agreement -------------------------------------------------------------------------
+
+\chapter*{HALAMAN PERNYATAAN PERSETUJUAN PUBLIKASI\\ TESIS UNTUK KEPENTINGAN AKADEMIS}
+\addcontentsline{toc}{chapter}{HALAMAN PERNYATAAN PERSETUJUAN}
+
+Sebagai sivitas academia Universitas Diponegoro, saya yang bertandatangan dibawah ini:
+
+\begin{tabular}{@{}l@{\hspace{1em}:}@{\hspace{1em}}p{.65\textwidth}}
+    Nama &  \yourName \\
+    NIM & \yourIdentifier \\
+    Program Studi & Magister Arsitektur \\
+    Departemen & Arsitektur \\
+    Fakultas & Teknik \\
+    Jenis Karya & Tesis \\
+\end{tabular}
+
+Demi pengembangan ilmu pengetahuan, menyetujui untuk memberikan Hak Bebas Royalti Nonekslusif (None-Exclusive Royalty Free Right) atas karya ilmiah saya yang berjudul \subtitle.
+
+Dengan hak tersebut, Universitas Diponegoro berhak menyimpan,\\ mengalihmedia/ formatkan, mengelola dalam bentuk pangkalan data (database),merawat dan mempublikasikan tugas akhir saya selama tetap mencantumkan nama saya sebagai penulis/pencipta dan sebagai pemilik Hak Cipta.
+
+Demikian pernyataan ini saya buat dengan sebenar-benarnya.
+\vspace{2\baselineskip}
+\begin{flushright}
+\begin{tabular}{@{}l@{\hspace{1em}:}l}
+Dibuat di & Semarang\\
+Pada tanggal & \DTMtoday\\
+\end{tabular}
+
+\vspace{2\baselineskip}
+\begin{tabular}{@{}l}
+
+Yang Menyatakan
+\\
+\\
+\\
+\yourName \\
+\end{tabular}
+\end{flushright}
+\clearpage
+
+% Prakata -------------------------------------------------------------------------
+\chapter*{\ttfamily\large PRAKATA}
+\addcontentsline{toc}{chapter}{PRAKATA}
+
+\begin{prakata}
+
+\lipsum[1-1]
+\end{prakata}
+
+% Abstrak -------------------------------------------------------------------------
+\begin{abstract}
+\addcontentsline{toc}{chapter}{ABSTRAK}
+    Your text here\ldots
+Write the abstract in English and in German, called \emph{Zusammenfassung}.
+Describe in about 250 to 350 words the problem, the innovation, the method, the results and implications.
+
+\end{abstract}
+
+\noindent Kata kunci: lorem, ipsum, lorem, ipsum
+
+% Abstract -------------------------------------------------------------------------
+\chapter*{ABSTRACT}
+\addcontentsline{toc}{chapter}{ABSTRACT}
+
+Your text here Write the abstract in English and in German, called \emph{Zusammenfassung}.
+Describe in about 250 to 350 words the problem, the innovation, the method, the results and implications.
+
+\vspace{\baselineskip}
+\noindent Keywords: lorem, ipsum, lorem, ipsum
+
+% Acknogledge -------------------------------------------------------------------------
+\chapter*{KATA PENGANTAR}
+\addcontentsline{toc}{chapter}{KATA PENGANTAR}
+
+Thanks to \ldots \lipsum[2-2]
+
+\vspace{2\baselineskip}
+\begin{flushright}
+\begin{tabular}{@{}l}
+
+Semarang, \DTMtoday \\
+\\
+\\
+\yourName \\
+\end{tabular}
+\end{flushright}
+\clearpage

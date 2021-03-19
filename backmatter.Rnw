@@ -1,0 +1,118 @@
+% Child with Latex code only:
+
+
+%--------------------------------------------------------------------------------------
+% R chunk
+%--------------------------------------------------------------------------------------
+<<<parent3, echo=F , cache=F>>=
+rm(list=ls())
+library("knitr")
+set_parent("thesis.Rnw")
+@
+%--------------------------------------------------------------------------------------
+
+\chapter*{BERITA ACARA SIDANG PRA TESIS}
+\addcontentsline{toc}{chapter}{BERITA ACARA}
+\setlength\parindent{0pt}
+Dengan ini saya selaku peserta sidang menyatakan bahwa telah melaksanakan sidang Pra Tesis pada:
+
+
+\begin{tabular}{@{}l@{\hspace{1em}:}@{\hspace{1em}}l@{}}
+    Hari &  \hariBerita\\
+    Tanggal & \DTMusedate{tanggalberita} \\
+    Waktu & \DTMusetime{waktuberita}\\
+    Tempat & \yourPlace\\
+\end{tabular}
+
+\vspace{\baselineskip}
+{\bf Dilakukan oleh:}
+
+\begin{tabular}{@{}l@{\hspace{1em}:}@{\hspace{1em}}p{.75\textwidth}}
+    Nama &  \yourName \\
+    NIM & \yourIdentifier \\
+    Judul & \subtitle \\
+\end{tabular}
+
+\vspace{\baselineskip}
+{\bf Dengan susunan tim penguji:}
+
+\begin{tabular}{@{}l@{\hspace{1em}:}@{\hspace{1em}}l@{}}
+    Pembimbing I & \yourAdvisor \\
+    Pembimbing II & \yourSecAdvisor \\
+\end{tabular}
+
+\vspace{\baselineskip}
+{\bf Pelaksanaan sidang:}
+\begin{enumerate}[leftmargin = *]
+    \item Sidang Pra tesis dengan judul \subtitle. Dimulai pada pukul \DTMusetime{waktuberita}.
+\end{enumerate}
+
+\vspace{\baselineskip}
+{\bf Daftar Pertanyaan:}
+
+{\bf \yourAdvisor}
+\begin{enumerate}[leftmargin = *]
+    \item \ldots
+    \item \ldots
+    \item \ldots
+\end{enumerate}
+\vspace{\baselineskip}
+{\bf \yourSecAdvisor}
+\begin{enumerate}[leftmargin = *]
+    \item \ldots
+    \item \ldots
+    \item \ldots
+\end{enumerate}
+
+\vspace{\baselineskip}
+Demikian berita acara sidang Pra Tesis ini dibuat sesuai dengan keadaan yang sebenar-benarnya. \ldots
+\vspace{30pt}
+
+\begin{flushright}
+\begin{tabular}{@{}l}
+
+Semarang, \DTMtoday \\
+Peserta sidang,
+\\
+\\
+\\
+\\
+\yourName \\
+NIM.\yourIdentifier
+\end{tabular}
+\end{flushright}
+
+\begin{center}
+\vspace{\baselineskip}
+Mengetahui
+
+\begin{tabular}{@{}ccc@{}}
+Pembimbing I	 & & Pembimbing II\\
+	 & & \\
+	 & & \\
+	 & & \\
+\yourAdvisor & & \yourSecAdvisor \\
+
+NIM.\yourNipAdvisor & & NIM.\yourNipSecAdvisor \\
+\end{tabular}
+\end{center}
+
+
+
+\chapter*{DATA DIRI PENULIS}
+\addcontentsline{toc}{chapter}{DATA DIRI PENULIS}
+
+\begin{wrapfigure}[7]{l}{3cm}
+\centering
+    \includegraphics[width=2.8cm,trim=60 40 60 140,clip]{saya.jpg}
+\end{wrapfigure}
+
+\noindent Muhammad Uliah Shafar, pria kelahiran Parepare, 26 Juni 1996, sebagai putra sulung dari Parman Farid dan Junaeda. Lulus pendidikan S2 di Magister Arsitektur DAFT Undip, dengan alur konsentrasi Arsitektur Kota. Uliah menjalani pendidikan S2 sejak 2019 sesaat setelah menempuh pendididkan S1nya di UTY Yogyakarta.
+Uliah mulai tertarik dengan bidang perkotaan sejak dia menonton film Spiderman sewaktu remaja. Ia melihat scene dimana spiderman berada di bawah jalan raya yang teknisnya disebut sistem pembuangan air kotor kota dan berpikir bahwa tempat tersebut tidak ada di kotanya dan mungkin itu memiliki kegunaan yang besar untuk seisi kota tersebut. Rasa keingintahuan terhadap bagaimana kota terbentuk menjadi latar belakang ia sangat bersemangat dalam menulis dan merancang hal-hal baru berkaitan sebuah kota yang terpelihara dan terorganisir dengan baik.
+
+Saat ini tulisannya sudah ada yang terpublikasikan di jurnal nasional berkaitan dengan ruang publik. Ketekunannya dalam menulis membuatnya ingin merencanakan penulisan artikel-artikel di kemudian hari, bahkan dalam bahasa internasional. Uliah sangat tertarik dengan buku-buku perkotaan terutama dengan judul Making Place. Buku tersebut menurutnya sangat menarik karena dipadukan dengan ilmu sains dan seni praktis dalam menggambarkan realitas sebuah kota.
+
+\vspace{2\baselineskip}
+\begin{flushright}
+    Hormat saya,\\ Muhammad Uliah Shafar
+\end{flushright}
