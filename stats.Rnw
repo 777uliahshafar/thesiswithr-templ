@@ -22,7 +22,7 @@ library(data.table)
 
 #=====================================================
 # Set working directory:
-setwd("/Volumes/hdd/proposalTesis/")
+setwd("/Volumes/hdd/Rthesis-templ/")
 cur.wd <- getwd()
 #=====================================================
 @
