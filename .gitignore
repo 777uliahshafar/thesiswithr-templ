@@ -1,3 +1,4 @@
+*.tex
 *-concordance.tex
 *.aux
 *.glo
