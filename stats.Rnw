@@ -1,14 +1,12 @@
-%------------------------------------------------------
-<<ssubfiles1, echo= F, cache= F>>=
+%-------------------------------------------------------------------------------------------------------------------------------
+<<parent1, echo= F, cache= F>>=
 library(knitr)
 set_parent("thesis.Rnw")
 @
-%------------------------------------------------------
-<<stats1, echo= F, error= F, message= F, results= "asis", warning= F, cache=F, autodep= T>>=
-#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-# Preamble:
-## Here we are loading all the necessary libraries, checking that we are on the correct OS
-## Load necessary libraries
+%-------------------------------------------------------------------------------------------------------------------------------
+<<init, echo= F, error= F, message= F, results= "asis", warning= F, cache=F, autodep= T>>=
+# Here we are loading all the necessary libraries, checking that we are on the correct OS
+# Load necessary libraries
 
 library(scales)
 library(dplyr)
@@ -17,25 +15,19 @@ library(ggplot2)
 library(colorout)
 library(xtable)
 library(data.table)
-#=====================================================
 
-
-#=====================================================
 # Set working directory:
-setwd("/Volumes/hdd/Rthesis-templ/")
+setwd("~/Documents/Rthesis-templ/")
 cur.wd <- getwd()
-#=====================================================
 @
 
 
-<<stats2, echo= F, error= F, message= F, results= "asis", warning= F, cache=F,fig.path="../figures/",fig.width=4, fig.height=3, autodep= T>>=
+<<piekerja, echo= F, error= F, message= F, results= "asis", warning= F, cache=F,fig.path="../figures/",fig.width=4, fig.height=3, autodep= T>>=
 
 df <- read.table("csv/descriptiveCSV.csv", sep = ";", header = TRUE)
 # head(df)
 df$Pekerjaan <- as.factor(df$Pekerjaan)
 
-
-## Adding Percent to Piechart Pekerjaan
 plotdata <- df %>%
   count(Pekerjaan) %>%
   arrange(desc(Pekerjaan)) %>%
@@ -49,8 +41,9 @@ plotdata$percent <- paste0(
   round(plotdata$prop), "%"
 )
 
+## Create command for incorporate plot data to latex
 cat(paste("\\newcommand{\\pieChartFig}\n{", sep= ""))
-cat("\\begin{figure}[h]\n")
+cat("\\begin{figure}[ht]\n")
 cat("\\centering\n")
 ggplot(
   data = plotdata,
@@ -74,7 +67,7 @@ cat(paste("}\n"))
 @
 
 
-<<stats3, echo= F, error= F, message= F, results= "asis", warning= F, cache=F, autodep= T>>=
+<<regresi, echo= F, error= F, message= F, results= "asis", warning= F, cache=F, autodep= T>>=
 
 df <- read.table("csv/dataset_tes2.csv", sep = ";", header = TRUE, stringsAsFactors = F)
 
@@ -119,6 +112,8 @@ out <- lm(data2$total_akt ~ data2$total_fit, data = data2)
 temp <- anova(out)
 # temp
 
+
+## Create command for incorporate table to latex
 cat(paste("\\newcommand{\\tabRegresi}{\n", sep=""))
 print(xtable(temp,
              label="tabRegresi",
