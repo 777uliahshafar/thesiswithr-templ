@@ -103,7 +103,8 @@
 %----------------------------------------------------------------------------------------
 %	TITLE SECTION
 %----------------------------------------------------------------------------------------
-%\setcounter{secnumdepth}{3}% number subsubsection in report class
+%\setcounter{secnumdepth}{3}% numbering subsubsection in report class
+%\setcounter{tocdepth}{3} % numbering subsubsection on toc
 
 \usepackage{titlesec}
 \makeatletter
@@ -111,7 +112,7 @@
 \renewcommand{\thechapter}{\Roman{chapter}}
 \renewcommand \thesection{\arabic{chapter}.\arabic{section}}
 \renewcommand \thesubsection{\arabic{chapter}.\arabic{section}.\arabic{subsection}}
-\renewcommand \thesubsubsection{\arabic{chapter}.\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}
+\renewcommand \thesubsubsection{\alph{subsubsection}.}
 
 \titleformat{\chapter} %command
 [display]%shape
@@ -124,7 +125,7 @@
 \titleformat{\section} %command
 {\normalfont\fontsize{12}{15}\bfseries}%format
 {\thesection}%label
-{12pt}%sep
+{12pt}%sep space between number n title
 {\vspace{0pt}}%before-title
 []%after-title
 
@@ -140,7 +141,7 @@
 %shape
 %{\normalfont\fontsize{12}{15}\bfseries}%format
 %{\thesubsubsection}%label
-%{12pt}%sep
+%{18pt}%sep
 %{}%before-title
 %[]%after-title
 
@@ -154,7 +155,7 @@
 {12pt plus 4pt minus 2pt}
 {0pt plus 2pt minus 2pt}
 \titlespacing\subsubsection{0pt}
-{12pt plus 4pt minus 2pt}
+{0pt plus 4pt minus 2pt}
 {0pt plus 2pt minus 2pt}
 
 
